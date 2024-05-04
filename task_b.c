@@ -9,9 +9,10 @@ int main(void)
 	scanf("%lf", &height);
 	
 	// Your code below here
-	
+	if (height <= 0)
+		height = -height;
 	const double radius = 2.2;
-	volumne = M_PI * radius * radius * abs(height);
+	volumne = M_PI * radius * radius * height;
 	
 	
 
